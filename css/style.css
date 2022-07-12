@@ -38,4 +38,109 @@ body {
     font-size: 12px;
     color:#616161;
 }
+.wrapper{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
 /* --------------------------------*/
+.main{
+    flex: 1 1 auto;
+}
+/* чтобы зафиксировать хедер в над страницей */
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+.header__container {
+    display: flex;
+    min-height: 114px;
+    align-items: center;
+}
+.header__menu {
+    flex: 1 1 auto;
+}
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 40px 0px 0px;
+}
+.menu__list {
+    display: flex;
+    gap: 40px;
+
+}
+.menu__link {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: #000000;
+}
+.header__button {
+    flex: 0 0 252px;
+    display: flex;
+    justify-content: flex-end;
+}
+.button {
+    display: inline-block;
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: #FCFDFE;
+    padding: 14px 30px;
+    background-color: #EC5863;
+    border-radius: 5px;
+    transition: 0.3s ease 0s;
+}
+.button:hover {
+    background-color: #f37a82;
+} 
+.button_blue {
+    background-color: #4285F4;
+}
+.button_blue:hover {
+    background-color: #70a3f7;
+}
+/* classes that will contain word __container will have written style */
+[class*="__container"] {
+    max-width: 1087px;
+    margin: 0px auto;
+    /* отступы безопасности , когда уменьшанется вьюпорт не будет косаться границ */
+    padding: 0px 15px;
+}
+/*PC*/
+@media (max-width:1087px){
+    [class*="__container"]{
+        max-width: 970px;
+    }
+}
+/*Tablet*/
+@media (max-width:991.98px){
+    [class*="__container"]{
+        max-width: 750px;
+    }
+    .header__container{
+        min-height: 80px;
+    }
+    .header__button{
+        flex: 0 0 170px;
+    }
+    .menu__item{
+        gap: 30px;
+    }
+}
+/*Mobile*/
+@media (max-width:767.98px){
+    [class*="__container"]{
+        max-width: none;
+    }
+
+}
