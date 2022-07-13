@@ -129,6 +129,7 @@ body {
     /* отступы безопасности , когда уменьшанется вьюпорт не будет косаться границ */
     padding: 0px 15px;
 }
+/*=====================Media queries for header section =================================*/
 /*PC*/
 @media (max-width:1087px){
     [class*="__container"]{
@@ -235,9 +236,6 @@ body {
     .close__icon__menu2{
         cursor: pointer; position: absolute; top: 20px; left: 10px;
     }
-    /* div:before, div:after {content: ""; position: absolute; width: 24px; height: 4px; background: gray;}
-    div:before {transform: rotate(45deg);}
-    div:after {transform: rotate(-45deg);} */
 }
 /*Mobile SMALL*/
 @media (max-width:479.98px){
@@ -247,3 +245,134 @@ body {
         overflow: hidden;
     }
 }
+/*=====================Header section style END =================================*/
+
+
+/*=======================Get started section style START ===============*/
+
+.text-block__title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 126%;
+    color: #000;
+}
+.text-block__title:not(:last-child) {
+    margin: 0px 0px 12px 0px;
+}
+.text-block__title_blue span {
+    color: #4285F4;
+}
+.text-block__title span {
+    color: #EC5863;
+}
+.text-block__text {
+    line-height: 138.5%;
+}
+.text-block__text:not(:last-child) {
+    margin: 0px 0px 24px 0px;
+}
+.get-started {
+    background-color:#FAFBFD;
+}
+.get-started__container {
+    padding: 150px 15px 50px 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.get-started__container::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    right: 267px;
+    top:0;
+    transform: translate(100%, 0px);
+    border-radius:30px 0 0 30px;
+    background-color:#EC5863;
+}
+.get-started__content {
+    flex: 0 1 48%;
+    padding: 0px 20px;
+}
+.get-started__video {
+    flex: 1 1 100%;
+    margin: 60px 0 0 20px;
+}
+.video-get-started {
+   display: inline-flex;
+   align-items: center;
+}
+.video-get-started__icon {
+    flex: 0 0 44px;
+}
+.video-get-started__body {
+    padding:  0 0 0 12px;
+}
+.video-get-started__title:not(:last-child) {
+    margin: 0 0 5px 0;
+}
+.video-get-started__title {
+    color:#B0B0B0;
+    font-size: 13px;
+    line-height: 126%;
+    letter-spacing: 1.5px;
+}
+.video-get-started__text {
+    text-transform: uppercase;
+    font-size: 9px;
+    line-height: 126%;
+    letter-spacing: 2px;
+}
+.get-started__image {
+    flex: 0 1 52%;
+    position: relative;
+    z-index: 2;
+}
+.get-started__image img{
+    max-width: 100%;
+}
+/*=====================Media queries for get started section section =================================*/
+/*PC*/
+@media (max-width:1087px){
+}
+/*Tablet*/
+@media (max-width:991.98px){
+    .get-started__container::before{
+        right: 185px;
+        border-radius:20px 0 0 20px;
+    }
+}
+/*Mobile*/
+@media (max-width:767.98px){
+    .get-started__container {
+        padding: 100px 15px 30px 15px;
+    }
+    .get-started__image{
+        flex: 1 1 100%;
+        text-align: center;
+        padding: 30px 0;
+    }
+    .get-started__video {
+        padding: 0;
+    }
+    .text-block__title{
+        font-size: 34px;
+    }
+    .get-started__container::before{
+        display: none;
+    }
+    .get-started__text-block{
+        max-width: none;
+
+    }
+    .get-started__content{
+        flex: 1 1 100%;
+        padding:0;
+    }
+}
+
+
+
+/*============================Get Started section style END============================================*/
