@@ -593,5 +593,64 @@ body {
         margin-bottom: 15px;
     }
 }
+.text-block_center {
+    text-align: center;
+}
+.text-block__text_mw{
+    max-width: 620px;
+    margin: 0 auto;
+}
 /*=============================Expert section style END=============================================*/
+/*=============================HEalthcare section style START=============================================*/
+.healthcare__text-block {
+    margin: 0 0 45px 0;
+}
+.healthcare__items {
+    display: flex;
+    max-width: 980px;
+    margin: 0 auto;
+    gap: 72px;
+}
+.healthcare__item {
+    flex:0 1 33.333% ;
+}
+.item-healthcare {
+    background: #ffff;
+    box-shadow: 0 4px 18px rgba(88, 126, 236, 0.18);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    padding: 35px 17px;
+}
+.item-healthcare__icon {
+    margin: 0 0 58px 0;
+}
+.item-healthcare__title {
+    font-size: 16px;
+    color:#000;
+    font-weight: 700;
+    line-height: 138.5%;
+    margin-bottom: 4px;
+}
+.item-healthcare__text {
+    line-height: 138.5%;
+}
 
+/*=============================Healthcare section style END=============================================*/
+
+.footer {
+    padding: 45px 0;
+}
+.footer__container {
+
+}
+.footer__items {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.footer__item {
+}
